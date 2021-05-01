@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    android:layout_height="match_parent"
+    tools:context=".GeneralPublic">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_main_drawable">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:text="ADD BENEFICIERY"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/SubmitGeneralPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:layout_marginStart="153dp"
+                android:drawableStart="@drawable/ic_baseline_save_24"
+                android:shadowColor="@color/purple_500"
+                android:background="@drawable/box_background"
+                android:textColor="@color/purple_700"
+                android:text="Save" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:layout_marginVertical="8dp"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+
+                <TextView
+                    android:id="@+id/RegNumberGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reg No.. Loading "
+                    android:padding="8dp"
+                    android:background="@drawable/circular_background_black"
+                    android:layout_marginVertical="6dp"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <EditText
+                    android:id="@+id/MobileGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="Mobile Number"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GENDER: "
+                        android:textSize="18sp"/>
+                    <RadioGroup
+                        android:id="@+id/GenderGeneralPublic"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/GenderMaleGeneralPublic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"/>
+                        <RadioButton
+                            android:id="@+id/GenderFemaleGeneralPublic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:paddingHorizontal="16dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DOB: "
+                        android:textSize="18sp"/>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/DobGeneralPublic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:background="@drawable/circular_background_black"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:padding="16dp"
+                        android:maxLength="8"
+                        android:hint="DD/MM/YYYY"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center_horizontal"
+                    android:text="(for eg. if dob is 01/01/2000, then type 01012000)"/>
+
+                <EditText
+                    android:id="@+id/AadhaarNumberGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:hint="Aadhaar Card Number"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Communicational Details"
+                    android:layout_marginVertical="8dp"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+
+                <EditText
+
+                    android:id="@+id/AddressGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginVertical="6dp"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Address"/>
+
+                <EditText
+                    android:id="@+id/AddressStateGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="State"/>
+
+                <EditText
+                    android:id="@+id/AddressDistrictGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="District"/>
+                <EditText
+                    android:id="@+id/AddressPinGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:hint="Pin"/>
+
+                <EditText
+
+                    android:id="@+id/NameGeneralPublic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:background="@drawable/circular_background_black"
+                    android:fontFamily="sans-serif"
+                    android:hint="Full Name"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

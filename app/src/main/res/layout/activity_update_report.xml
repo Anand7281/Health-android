@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    tools:context=".UpdateReport">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_main_drawable">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:text="UPDATE REPORT"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/SubmitUpdateReport"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_navigate_next"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/box_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ground Report"
+                    android:layout_marginVertical="8dp"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+
+                <TextView
+                    android:id="@+id/RegNumberUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Reg No"
+                    android:padding="8dp"
+                    android:background="@drawable/circular_background_black"
+                    android:layout_marginVertical="6dp"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/SerumUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginVertical="6dp"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Serum Vial"/>
+                <EditText
+
+                    android:id="@+id/EdtaUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginVertical="6dp"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Edta Vial"/>
+
+                <EditText
+
+                    android:id="@+id/HeightUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginVertical="6dp"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="16dp"
+                    android:hint="Height (in cm)"/>
+
+
+                <EditText
+                    android:id="@+id/WeightUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:hint="Weight (in kg)"/>
+
+
+                <EditText
+                    android:id="@+id/HandgripStrengthUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:hint="Handgrip Strength (in kg)"/>
+
+                <EditText
+                    android:id="@+id/FlexibilityUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:hint="Flexibility (in cm)"/>
+
+                <EditText
+                    android:id="@+id/BpUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Blood Pressure (BP)"/>
+
+                <EditText
+                    android:id="@+id/PulseUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Pulse"/>
+
+                <EditText
+                    android:id="@+id/UrineUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Urine "/>
+
+                <EditText
+                    android:id="@+id/OtherUpdateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/circular_background_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:hint="Other"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="(for eg. Other_Name: Other_Value)"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

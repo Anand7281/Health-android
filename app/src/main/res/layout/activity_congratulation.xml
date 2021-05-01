@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    tools:context=".CongratulationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_drawable">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations Your Data Hve been saved Successfully"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="28sp"
+            android:textColor="@color/purple_700"/>
+
+        <TextView
+            android:id="@+id/reg_congrats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXXXX"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="32sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/addMoreCongrats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/box_background"
+                android:layout_margin="8dp"
+                android:text="Add More"/>
+            <Button
+                android:id="@+id/HomeCongrats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/box_background"
+                android:layout_margin="8dp"
+                android:text="Home"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

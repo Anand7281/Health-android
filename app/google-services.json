@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "835222269215",
+    "project_id": "indiaforfitness-d2aa2",
+    "storage_bucket": "indiaforfitness-d2aa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835222269215:android:afd36b63ee0bc9f462142a",
+        "android_client_info": {
+          "package_name": "com.indiaforfitness.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835222269215-bb2hqrcuq87qrst7a6m2o4c4tk4afaql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indiaforfitness.app",
+            "certificate_hash": "2eeca955292d8a8b5c411fd31195c68c2d385525"
+          }
+        },
+        {
+          "client_id": "835222269215-ohlv28g05spg2pj3of888qvpljtph3lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwQnQ3UIGhtWKnKGn1mspQrhN4dtR3iw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835222269215-ohlv28g05spg2pj3of888qvpljtph3lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
