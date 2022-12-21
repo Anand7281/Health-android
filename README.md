@@ -19,6 +19,3 @@ In this app we can register ourself and the add benificiaries who can then under
 * Android Studio
 * Google Firebase
 
-## Developer
-### [tanay388](https://github.com/tanay388)
-  * [mail -> tanay.deo388@gmil.com](mailto:tanay.deo388@gmail.com)
